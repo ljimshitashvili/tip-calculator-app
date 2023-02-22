@@ -21,8 +21,22 @@ main{
     padding: 32px;
 }
 
+.container{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bill-container{
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 32px;
+}
+
 .bill-container h1{
     margin-bottom: 6px;
+    color: #5E7A7D;
+
 }
 
 .bill-container input{
@@ -30,7 +44,25 @@ main{
     border: 0;
     border-radius: 5px;
     height: 48px;
-    width: 311px;
+    width: 100%;
+    padding-right: 17px;
+    box-sizing: border-box;
+    text-align: right;
+    color: #00474B;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+.bill-container div{
+    position: relative;
+}
+
+#usd{
+    position: absolute;
+    top: 17px;
+    left: 19px;
 }
 
 ::placeholder{
@@ -42,6 +74,79 @@ main{
     font-family: 'Space Mono', monospace;
 }
 
-.select-tip{
-    
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16.5px;
+    width: 100%;
+    max-width: 380px;
+    justify-content: center;
+}
+
+.select-tip h1{
+    color: #5E7A7D;
+    margin-bottom: 16px;
+}
+
+.select-tip button, .select-tip input{
+    width: 145px;
+    height: 48px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #00474B;
+    color: #fff;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+#custom{
+    background-color: #F3F9FA;
+    color: #00474B;
+    text-align: right;
+    padding-right: 17px;
+    box-sizing: border-box;
+}
+
+input[id="custom"]::placeholder{
+    color: #547878;
+}
+
+.quantity-container{
+    width: 100%;
+    max-width: 380px;
+    margin: 32px 0 ;
+}
+
+.bill-container h1{
+    margin-bottom: 6px;
+    color: #5E7A7D;
+
+}
+
+.quantity-container input{
+    background-color: #F3F9FA;
+    border: 0;
+    border-radius: 5px;
+    height: 48px;
+    width: 100%;
+    padding-right: 17px;
+    box-sizing: border-box;
+    text-align: right;
+    color: #00474B;
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+.quantity-container div{
+    position: relative;
+}
+
+#person{
+    position: absolute;
+    top: 17px;
+    left: 19px;
 }
