@@ -1,1 +1,0 @@
-alert("Lasha's first JavaScript project")
