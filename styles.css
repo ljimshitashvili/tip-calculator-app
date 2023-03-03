@@ -65,6 +65,27 @@ main{
     left: 19px;
 }
 
+.percent-btn:hover,
+#reset-all:hover{
+    cursor: pointer;
+    background-color: #9FE8DF;
+    color: #00474B;
+}
+
+.percent-btn:focus{
+    background-color: #26C2AE;
+    color: #00474B;
+}
+
+.active{
+    border: 2px solid red;
+}
+
+.error-message{
+    color: red;
+    display: none;
+}
+
 ::placeholder{
     color: #00474B;
     text-align: end;
@@ -72,6 +93,7 @@ main{
     line-height: 35.5px;
     font-weight: 700;
     font-family: 'Space Mono', monospace;
+    opacity: 0.5;
 }
 
 .button-container{
@@ -111,6 +133,7 @@ main{
 
 input[id="custom"]::placeholder{
     color: #547878;
+    opacity: 1;
 }
 
 .quantity-container{
@@ -122,12 +145,14 @@ input[id="custom"]::placeholder{
 .quantity-container h1{
     margin-bottom: 6px;
     color: #5E7A7D;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .quantity-container input{
     background-color: #F3F9FA;
-    border: 0;
+    border: none;
     border-radius: 5px;
     height: 48px;
     width: 100%;
