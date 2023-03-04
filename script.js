@@ -30,6 +30,8 @@ function reset(){
     bill.value = "";
     custom.value = "";
     quantity.value = "";
+    quantity.style.border = "none";
+    errorMessage.style.display = "none";
 }
 
 function percentButton(parameter){
